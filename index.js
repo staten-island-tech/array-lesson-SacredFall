@@ -16,7 +16,7 @@ const topstudents = students
 
 //#2
 const youngstudents = students
-  .filter((student) => student.age < 21)
+  .filter((student) => student.age <= 21)
   .forEach((student) => console.log(student.name));
 
 //Part 3
@@ -39,3 +39,12 @@ const products = [
 
 products.forEach((x) => console.log(x));
 products.forEach((x) => console.log((x.price *= 1.1)));
+
+//part 2
+
+const highlyrated = products.filter((product) => product.rating >= 4.5);
+
+highlyrated.forEach((n) => console.log(n));
+
+products.filter((p) => p.price < 1000).forEach((p) => console.log(p.name));
+//part 2
